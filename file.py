@@ -1,8 +1,8 @@
-import os
+#!/bin/bash
 
-def menu():
-
-    print(""" 
+menu() {
+    clear
+    echo "
 ----
 ONLY FOR TERMUX!
 ----
@@ -28,126 +28,126 @@ ONLY FOR TERMUX!
 17. Install Hash-Buster
 18. Install D-TECT
 19. Install routersploit
+
+20. Install WILL ADD MORE
 ------------------------------------------
 99. Exit
 ==========================================
-""")
+"
+}
 
-loop = True
+while true; do
+    menu
+    read -p "#: " what
+    if [ "$what" = "00" ]; then
+        echo "================================"
+        echo "This will install: nmap, hydra, sqlmap, metasploit, ngrok, angryFuzzer, red_hawk, weeman, IPGeoLocation, cupp, instahack, TwitterSniper, Hash-Buster, D-TECT, routersploit and viSQL with one click."
+        echo "----------------"
+        read -p "[?] Do you want to continue? (y/n): " hm
+        echo "================================"
+        if [ "$hm" = "y" ]; then
+            echo "========================================================"
+            echo "[+] Please put down you android and go to the toilet..."
+            echo "Because this will take a long time."
+            echo "========================================================"
+            pkg update
+            pkg install -y git
+            pkg install -y python
+            pkg install -y python2
+            pkg install -y wget
+            pkg install -y nmap
+            pkg install -y hydra
+            pkg update -y
+            pkg install -y git
+            pkg install python2
+            cd /data/data/com.termux/files/home
+            git clone https://github.com/sqlmapproject/sqlmap.git
+            cd /data/data/com.termux/files/home
+            pkg install wget
+            wget https://Auxilus.github.io/metasploit.sh
+            bash metasploit.sh
+            cd metasploit-framework
+            gem install bundle --pre
+            bundle config build.nokogiri --use-system-libraries
+            bundle install
+            cd /data/data/com.termux/files/home
+            pkg update -y
+            pkg install -y git
+            git clone https://github.com/themastersunil/ngrok.git
+            cd /data/data/com.termux/files/home
+            pkg update -y
+            pkg install -y git
+            pkg install -y python2
+            git clone https://github.com/ihebski/angryFuzzer.git
+            cd angryFuzzer
+            pip2 install -r requirements.txt
+            pip2 install requests
+            cd /data/data/com.termux/files/home
+            pkg update -y
+            pkg install -y git
+            pkg install -y php
+            git clone https://github.com/Tuhinshubhra/RED_HAWK
+            cd /data/data/com.termux/files/home
+            pkg update -y
+            pkg install -y python2
+            pkg install -y git
+            git clone https://github.com/evait-security/weeman.git
+            cd weeman
+            chmod +x weeman.py
+            cd /data/data/com.termux/files/home
+            pkg update -y
+            pkg install -y git
+            pkg install -y python
+            git clone https://github.com/maldevel/IPGeoLocation.git
+            cd IPGeoLocation
+            pip install -r requirements.txt
+            cd /data/data/com.termux/files/home
+            pkg update -y
+            pkg install -y git
+            pkg install -y python
+            git clone https://github.com/Mebus/cupp.git
+            pkg update -y
+            pkg install -y git
+            pkg install -y python
+            pkg install -y nano
+            pip install requests
+            pip install beautifulsoup4
+            git clone https://github.com/avramit/instahack.git
+            pkg update -y
+            pkg install -y git
+            pkg install -y python
+            pip install mechanicalsoup
+            pkg install -y nano
+            git clone https://github.com/abdallahelsokary/TwitterSniper.git
+            pkg update -y
+            pkg install -y git
+            pkg install -y python2
+            git clone https://github.com/blackvkng/viSQL.git
+            pkg update -y
+            pkg install -y git
+            pkg install -y python2
+            git clone https://github.com/UltimateHackers/Hash-Buster.git
+            pkg update -y
+            pkg install -y git
+            pkg install -y python2
+            git clone https://github.com/shawarkhanethicalhacker/D-TECT.git
+            pkg update -y
+            pkg install -y git
+            pkg install -y python2
+            git clone https://github.com/reverse-shell/routersploit.git
+            cd routersploit
+            pip2 install -r requirements.txt
+            pip2 install -r requirements-dev.txt
+            pip2 install requests
+            clear
+            echo "========================================"
+            echo "[+] everything successfully installed :)"
+            echo "[+] Happy Hacking <3"
+            echo "========================================"
+        else
 
-while loop:
-    menu()
-    what = input("#: ")
-    if what == "00":
-        print("================================")
-        print("This will install: nmap, hydra, sqlmap, metasploit, ngrok, angryFuzzer, red_hawk, weeman, IPGeoLocation, cupp, instahack, TwitterSniper, Hash-Buster, D-TECT, routersploit and viSQL with one click.")
-        print("----------------")
-        hm = input("[?] Do you want to continue? (y/n): ")
-        print("================================")
-        if hm == "y":
-            print("========================================================")
-            print("[+] Please put down you android and go to the toilet...")
-            print("Because this will take a long time.")
-            print("========================================================")
-            os.system("pkg update")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python")
-            os.system("pkg install -y python2")
-            os.system("pkg install -y wget")
-            os.sysetm("pkg install -y nmap")
-            os.system("plg install -y hydra ")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install python2")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/sqlmapproject/sqlmap.git")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg install wget")
-            os.system("cd /data/data/com.termux/files/home && wget https://Auxilus.github.io/metasploit.sh")
-            os.system("cd /data/data/com.termux/files/home && bash metasploit.sh")
-            os.system("cd /data/data/com.termux/files/home && cd metasploit-framework")
-            os.system("cd /data/data/com.termux/files/home && gem install bundle --pre")
-            os.system("cd /data/data/com.termux/files/home && bundle config build.nokogiri --use-system-libraries")
-            os.system("cd /data/data/com.termux/files/home && bundle install")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/themastersunil/ngrok.git")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python2")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/ihebski/angryFuzzer.git")
-            os.system("cd /data/data/com.termux/files/home && cd angryFuzzer")
-            os.system("cd /data/data/com.termux/files/home && pip2 install -r requirements.txt")
-            os.system("cd /data/data/com.termux/files/home && pip2 install requests")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y php")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/Tuhinshubhra/RED_HAWK")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg update -y")
-            os.system("pkg install -y python2")
-            os.system("pkg install -y git")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/evait-security/weeman.git")
-            os.system("cd /data/data/com.termux/files/home && cd weeman")
-            os.system("cd /data/data/com.termux/files/home && chmod +x weeman.py")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/maldevel/IPGeoLocation.git")
-            os.system("cd /data/data/com.termux/files/home && cd IPGeoLocation")
-            os.system("cd /data/data/com.termux/files/home && pip install -r requirements.txt")
-            os.system("cd /data/data/com.termux/files/home")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/Mebus/cupp.git")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python")
-            os.system("pkg install -y nano")
-            os.system("pip install requests")
-            os.system("pip install beautifulsoup4")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/avramit/instahack.git")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python")
-            os.system("pip install mechanicalsoup")
-            os.system("pkg install -y nano")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/abdallahelsokary/TwitterSniper.git")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python2")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/blackvkng/viSQL.git")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python2")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/UltimateHackers/Hash-Buster.git")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python2")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/shawarkhanethicalhacker/D-TECT.git")
-            os.system("pkg update -y")
-            os.system("pkg install -y git")
-            os.system("pkg install -y python2")
-            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/reverse-shell/routersploit.git")
-            os.system("cd /data/data/com.termux/files/home && cd routersploit")
-            os.system("pip2 install -r requirements.txt")
-            os.system("pip2 install -r requirements-dev.txt")
-            os.system("pip2 install -r requests")
-            os.system("clear")
-            print("========================================")
-            print("[+] everything successfully installed :)")
-            print("[+] Happy Hacking <3")
-            print("========================================")
-        else:
-            rmenu = input("[?] Back to Menu? (y/n): ")
-            if rmenu == "y":
-                menu()
-            else:
-                break
+
+
     if what == "1":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
