@@ -45,8 +45,8 @@ while true; do
               pkg update -y && pkg install -y nmap
               nmap
             else
-              echo "Directory 'nmap' doesn't exist, please install the repo."
               exit
+              echo "Directory 'nmap' doesn't exist, please install the repo."
             fi
             ;;
         2)
