@@ -46,6 +46,7 @@ while true; do
               nmap
             else
               echo "Directory 'nmap' doesn't exist, please install the repo."
+              exit
             fi
             ;;
         2)
