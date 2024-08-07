@@ -1,4 +1,4 @@
-![Screenshot 2024-08-07 9 12 56 AM](https://github.com/user-attachments/assets/5dc38ce7-d4dc-46fc-9979-161897560978)
+![Screenshot 2024-08-07 9 23 06 AM](https://github.com/user-attachments/assets/9ff43894-a797-4009-b2a0-9d2a68fe53fb)
 
 # How to start:
 * Install Termux on your adnroid phone from `F-droid`
