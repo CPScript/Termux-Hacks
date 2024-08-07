@@ -23,15 +23,16 @@ ONLY FOR TERMUX!
 14. Install Ubuntu (un-rooted)
 15. Install Fedora
 16. Install PhisherPrice
-17. Install viSQL
-18. Install Hash-Buster
-19. Install D-TECT
-20. Install routersploit
 ------------------------------------
 99. Exit
 ====================================
 "
 }
+# 17. Install routersploit
+# 18. Install viSQL
+# 19. Install Hash-Buster
+# 20. Install D-TECT
+# 21. Plan on adding more in the future
 
 while true; do
     menu
