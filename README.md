@@ -1,3 +1,4 @@
+(follow me for more!)
 ![Screenshot 2024-08-07 9 23 06 AM](https://github.com/user-attachments/assets/9ff43894-a797-4009-b2a0-9d2a68fe53fb)
 
 # How to start:
