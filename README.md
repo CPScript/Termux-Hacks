@@ -9,7 +9,7 @@
   ```
   then
   ```
-  git clone ttps://github.com/CPScript/holaa
+  git clone https://github.com/CPScript/Android-Hacks
   ```
 
 * Execute file:
