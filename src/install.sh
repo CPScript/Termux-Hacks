@@ -19,12 +19,12 @@ ONLY FOR TERMUX!
 12. Install instahack
 13. install TwitterSniper
 14. Install ADD SOMETHING HERE!
-15. Install Fedora
-16. Install viSQL
-17. Install Hash-Buster
-18. Install D-TECT
-19. Install routersploit
-20. Install PhisherPrice
+15. Install ADD SOMETHING HERE!
+16. Install PhisherPrice
+17. Install viSQL
+18. Install Hash-Buster
+19. Install D-TECT
+20. Install routersploit
 ------------------------------------------
 99. Exit
 ==========================================
@@ -41,7 +41,7 @@ while true; do
             echo "===================================="
             echo "[+] nmap installed successfully :)"
             echo "[+] Type 'nmap' to start."
-            echo "===================================="
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -54,7 +54,7 @@ while true; do
             echo "===================================="
             echo "[+] hydra installed successfully :)"
             echo "[+] Type 'hydra' to start."
-            echo "===================================="
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -67,8 +67,8 @@ while true; do
             git clone https://github.com/sqlmapproject/sqlmap.git
             echo "===================================="
             echo "[+] SQLMap installed successfully :)"
-            echo "[+] Go to sqlmap folder and type 'python2 sqlmap.py' to start."
-            echo "===================================="
+            echo "[+] Type 'cd sqlmap' then 'python2 sqlmap.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -86,8 +86,8 @@ while true; do
             bundle install
             echo "===================================="
             echo "[+] Metasploit installed successfully :)"
-            echo "[+] Type 'msfconsole' to start."
-            echo "===================================="
+            echo "[+] Type 'msfconsole' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -100,8 +100,8 @@ while true; do
             git clone https://github.com/themastersunil/ngrok.git
             echo "===================================="
             echo "[+] ngrok installed successfully :)"
-            echo "[+] Go to ngrok folder and type './ngrok http 80' to start."
-            echo "===================================="
+            echo "[+] Type 'cd ngrok' then './ngrok http 80' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -116,8 +116,8 @@ while true; do
             chmod +x kalinethunter
             echo "===================================="
             echo "[+] Nethunter installed successfully :)"
-            echo "[+] Go to Nethunter-In-Termux folder and type './kalinethunter' to start."
-            echo "===================================="
+            echo "[+] type 'cd Nethunter-In-Termux' then './kalinethunter' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -133,8 +133,8 @@ while true; do
             pip2 install requests
             echo "===================================="
             echo "[+] angryFuzzer installed successfully :)"
-            echo "[+] Go to angryFuzzer folder and type 'python2 angryFuzzer.py' to start."
-            echo "===================================="
+            echo "[+] Type 'cd angryFuzzer' then 'python2 angryFuzzer.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -147,8 +147,8 @@ while true; do
             git clone https://github.com/Tuhinshubhra/RED_HAWK
             echo "===================================="
             echo "[+] RED_HAWK installed successfully :)"
-            echo "[+] Go to RED_HAWK folder and type 'php rhawk.php' to start."
-            echo "===================================="
+            echo "[+] Type 'cd RED_HAWK' then 'php rhawk.php' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -163,8 +163,8 @@ while true; do
             chmod +x weeman.py
             echo "===================================="
             echo "[+] weeman installed successfully :)"
-            echo "[+] Go to weeman folder and type 'python2 weeman.py' to start."
-            echo "===================================="
+            echo "[+] Type 'cd weeman' then 'python2 weeman.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -179,8 +179,8 @@ while true; do
             pip install -r requirements.txt
             echo "===================================="
             echo "[+] IPGeoLocation installed successfully :)"
-            echo "[+] Go to IPGeoLocation folder and type 'python ipgeolocation.py' to start."
-            echo "===================================="
+            echo "[+] Type 'IPGeoLocation' then 'python ipgeolocation.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -193,8 +193,8 @@ while true; do
             git clone https://github.com/Mebus/cupp.git
             echo "===================================="
             echo "[+] Cupp installed successfully :)"
-            echo "[+] Go to cupp folder and type 'python cupp3.py' to start."
-            echo "===================================="
+            echo "[+] Type 'cd cupp' then 'python cupp3.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -208,8 +208,8 @@ while true; do
             git clone https://github.com/avramit/instahack.git
             echo "===================================="
             echo "[+] Instahack installed successfully :)"
-            echo "[+] Go to instahack folder and type 'python hackinsta.py' to start."
-            echo "===================================="
+            echo "[+] Type 'cd instahack' then 'python hackinsta.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -223,9 +223,9 @@ while true; do
             pkg install -y nano
             git clone https://github.com/abdallahelsokary/TwitterSniper.git
             echo "===================================="
-            echo "[+] TwitterSniper installed successfully :)"
-            echo "[+] Go to TwitterSniper folder and type 'python TwitterSniper.py' to start."
-            echo "===================================="
+            echo "[+] TwitterSniper installed successfully"
+            echo "[+] Type 'cd TwitterSniper' then 'python TwitterSniper.py' to execute."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -234,7 +234,9 @@ while true; do
             fi
             ;;
         14)
+            echo "========================================="
             echo "Ubuntu cannot be installed in Termux yet."
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -243,7 +245,9 @@ while true; do
             fi
             ;;
         15)
+            echo "========================================="
             echo "Fedora cannot be installed in Termux. yet"
+            echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
@@ -251,18 +255,16 @@ while true; do
                 break
             fi
             ;;
-        20)
+        16)
             pkg update -y && pkg install -y git python
-            pip install mechanicalsoup
             pkg install -y nano
             git clone https://github.com/SirCryptic/phisherprice.git
             echo "===================================="
             echo "[+] PhisherPrice installed successfully."
-            echo "(you will need to install it's dependancies)"
-            echo "[+] Execute PhisherPrice? (y/n)"
-            echo "===================================="
-
-            read -p "[?] user-input > " rmenu
+            echo "[+] Type 'cd phisherprice' then 'bash phisherprice.sh' to execute."
+            echo "(Warning. Might require root)"
+            echo ""
+            read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
                 continue
             else
@@ -274,7 +276,7 @@ while true; do
             break
             ;;
         *)
-            echo "Invalid option. Please choose a valid option."
+            echo "err: Invalid option."
             ;;
     esac
 done
