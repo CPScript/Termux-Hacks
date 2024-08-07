@@ -21,7 +21,7 @@ ONLY FOR TERMUX!
 12. Install instahack
 13. install TwitterSniper
 14. Install Ubuntu (un-rooted)
-15. Install ADD SOMETHING HERE!
+15. Install Fedora
 16. Install PhisherPrice
 17. Install viSQL
 18. Install Hash-Buster
