@@ -4,9 +4,9 @@ menu() {
     clear
     echo "
 ONLY FOR TERMUX!
------------------------------
- - by CPScript
------------------------------
+====================================
+ Follow CPScript on githib for more
+------------------------------------
 1. Install Nmap 
 2. Install Hydra
 3. Install SQLMap
@@ -27,9 +27,9 @@ ONLY FOR TERMUX!
 18. Install Hash-Buster
 19. Install D-TECT
 20. Install routersploit
------------------------------
+------------------------------------
 99. Exit
-==========================================
+====================================
 "
 }
 
