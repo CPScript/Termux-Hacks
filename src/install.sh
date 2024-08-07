@@ -4,7 +4,9 @@ menu() {
     clear
     echo "
 ONLY FOR TERMUX!
-------------------------------------------
+-----------------------------
+ - by CPScript
+-----------------------------
 1. Install Nmap 
 2. Install Hydra
 3. Install SQLMap
@@ -18,14 +20,14 @@ ONLY FOR TERMUX!
 11. Install Cupp
 12. Install instahack
 13. install TwitterSniper
-14. Install ADD SOMETHING HERE!
+14. Install Ubuntu (un-rooted)
 15. Install ADD SOMETHING HERE!
 16. Install PhisherPrice
 17. Install viSQL
 18. Install Hash-Buster
 19. Install D-TECT
 20. Install routersploit
-------------------------------------------
+-----------------------------
 99. Exit
 ==========================================
 "
@@ -39,7 +41,7 @@ while true; do
         1)
             pkg update -y && pkg install -y nmap
             echo "===================================="
-            echo "[+] nmap installed successfully :)"
+            echo "[+] nmap installed successfully"
             echo "[+] Type 'nmap' to start."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -52,7 +54,7 @@ while true; do
         2)
             pkg update -y && pkg install -y hydra
             echo "===================================="
-            echo "[+] hydra installed successfully :)"
+            echo "[+] hydra installed successfully"
             echo "[+] Type 'hydra' to start."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -66,7 +68,7 @@ while true; do
             pkg update -y && pkg install -y git python2
             git clone https://github.com/sqlmapproject/sqlmap.git
             echo "===================================="
-            echo "[+] SQLMap installed successfully :)"
+            echo "[+] SQLMap installed successfully"
             echo "[+] Type 'cd sqlmap' then 'python2 sqlmap.py' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -85,7 +87,7 @@ while true; do
             bundle config build.nokogiri --use-system-libraries
             bundle install
             echo "===================================="
-            echo "[+] Metasploit installed successfully :)"
+            echo "[+] Metasploit installed successfully"
             echo "[+] Type 'msfconsole' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -99,7 +101,7 @@ while true; do
             pkg update -y && pkg install -y git
             git clone https://github.com/themastersunil/ngrok.git
             echo "===================================="
-            echo "[+] ngrok installed successfully :)"
+            echo "[+] ngrok installed successfully"
             echo "[+] Type 'cd ngrok' then './ngrok http 80' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -115,7 +117,7 @@ while true; do
             cd Nethunter-In-Termux
             chmod +x kalinethunter
             echo "===================================="
-            echo "[+] Nethunter installed successfully :)"
+            echo "[+] Nethunter installed successfully"
             echo "[+] type 'cd Nethunter-In-Termux' then './kalinethunter' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -132,7 +134,7 @@ while true; do
             pip2 install -r requirements.txt
             pip2 install requests
             echo "===================================="
-            echo "[+] angryFuzzer installed successfully :)"
+            echo "[+] angryFuzzer installed successfully"
             echo "[+] Type 'cd angryFuzzer' then 'python2 angryFuzzer.py' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -146,7 +148,7 @@ while true; do
             pkg update -y && pkg install -y git php
             git clone https://github.com/Tuhinshubhra/RED_HAWK
             echo "===================================="
-            echo "[+] RED_HAWK installed successfully :)"
+            echo "[+] RED_HAWK installed successfully"
             echo "[+] Type 'cd RED_HAWK' then 'php rhawk.php' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -162,7 +164,7 @@ while true; do
             cd weeman
             chmod +x weeman.py
             echo "===================================="
-            echo "[+] weeman installed successfully :)"
+            echo "[+] weeman installed successfully"
             echo "[+] Type 'cd weeman' then 'python2 weeman.py' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -178,7 +180,7 @@ while true; do
             cd IPGeoLocation
             pip install -r requirements.txt
             echo "===================================="
-            echo "[+] IPGeoLocation installed successfully :)"
+            echo "[+] IPGeoLocation installed successfully"
             echo "[+] Type 'IPGeoLocation' then 'python ipgeolocation.py' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -192,7 +194,7 @@ while true; do
             pkg update -y && pkg install -y git python
             git clone https://github.com/Mebus/cupp.git
             echo "===================================="
-            echo "[+] Cupp installed successfully :)"
+            echo "[+] Cupp installed successfully"
             echo "[+] Type 'cd cupp' then 'python cupp3.py' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -207,7 +209,7 @@ while true; do
             pip install requests beautifulsoup4
             git clone https://github.com/avramit/instahack.git
             echo "===================================="
-            echo "[+] Instahack installed successfully :)"
+            echo "[+] Instahack installed successfully"
             echo "[+] Type 'cd instahack' then 'python hackinsta.py' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
@@ -234,8 +236,12 @@ while true; do
             fi
             ;;
         14)
+            apt update && apt upgrade -y
+            pkg install wget openssl-tool proot -y
+            wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh
             echo "========================================="
-            echo "Ubuntu cannot be installed in Termux yet."
+            echo "[+] Ubuntu installed succsesfully"
+            echo "[+] Type './ubuntu.sh' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
@@ -245,8 +251,12 @@ while true; do
             fi
             ;;
         15)
+            apt update && apt upgrade -y
+            pkg install wget proot -y
+            wget https://raw.githubusercontent.com/FedoraARM/fedora-arm/master/tools/termux-chroot/setup-fedora-termux.sh
             echo "========================================="
-            echo "Fedora cannot be installed in Termux. yet"
+            echo "[+] Fedora installed succsesfully"
+            echo "[+] Type 'setup-fedora-termux.sh' then 'start-fedora.sh' to execute."
             echo ""
             read -p "[?] Back to Menu? (y/n): " rmenu
             if [ "$rmenu" = "y" ]; then
