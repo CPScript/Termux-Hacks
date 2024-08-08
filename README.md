@@ -11,7 +11,7 @@
   ```
   then
   ```
-  git clone https://github.com/CPScript/Android-Hacks
+  git clone https://github.com/CPScript/Termux-Hacks
   ```
 
 * Execute file:
