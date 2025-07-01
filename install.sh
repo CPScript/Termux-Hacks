@@ -5,7 +5,7 @@ menu() {
     echo "
 ONLY FOR TERMUX!
 ====================================
- Follow CPScript on githib for more
+ Follow CPScript on github for more
 ------------------------------------
 1. Install Nmap 
 2. Install Hydra
